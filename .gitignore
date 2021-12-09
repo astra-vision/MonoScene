@@ -1,0 +1,9 @@
+*.pyc
+__pycache__/
+*.egg-info/
+outputs/
+trained_models/*.ckpt
+monoscene_output/*
+core*
+images
+.vscode
