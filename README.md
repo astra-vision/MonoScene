@@ -141,7 +141,7 @@ $ export KITTI_360_ROOT=/path/to/KITTI-360
 
 ## Pretrained models
 
-To be updated!
+Download MonoScene pretrained models [on SemanticKITTI](https://www.rocq.inria.fr/rits_files/computer-vision/monoscene/monoscene_kitti.ckpt) and [on NYUv2](https://www.rocq.inria.fr/rits_files/computer-vision/monoscene/monoscene_nyu.ckpt), then put them in the folder `/path/to/MonoScene/trained_models`.
 
 
 # Running MonoScene
