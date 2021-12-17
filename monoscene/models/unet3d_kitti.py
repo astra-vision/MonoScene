@@ -59,7 +59,7 @@ class UNet3D(nn.Module):
         self.context_prior = context_prior
         if context_prior:
             self.CP_mega_voxels = CPMegaVoxels(
-                self.feature * 4, self.feature * 4, size_l3, bn_momentum=bn_momentum
+                self.feature * 4, size_l3, bn_momentum=bn_momentum
             )
 
     def forward(self, input_dict):

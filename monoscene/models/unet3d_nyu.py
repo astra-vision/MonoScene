@@ -60,8 +60,7 @@ class UNet3D(nn.Module):
 
         if context_prior:
             self.CP_mega_voxels = CPMegaVoxels(
-                self.feature_1_16,
-                self.feature_1_16,
+                self.feature_1_16,                
                 size_1_16,
                 n_relations=n_relations,
                 bn_momentum=bn_momentum,

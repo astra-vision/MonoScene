@@ -23,7 +23,7 @@ class NYUDataModule(pl.LightningDataModule):
         self.num_workers = num_workers
         self.frustum_size = frustum_size
 
-    def setup(self):
+    def setup(self, stage=None):
         self.train_ds = NYUDataset(
             split="train",
             preprocess_root=self.preprocess_root,
