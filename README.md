@@ -87,7 +87,7 @@ $ pip install -e ./
 
 ### SemanticKITTI
 
-1. Download the Full Semantic Scene Completion dataset (v1.1) from the [SemanticKITTI website](http://www.semantic-kitti.org/dataset.html).
+1. Download the Full **Semantic Scene Completion dataset** and **KITTI Odometry Benchmark calibration data** (v1.1) from the [SemanticKITTI website](http://www.semantic-kitti.org/dataset.html).
 
 
 2. Create a folder to store SemanticKITTI preprocess data at `/path/to/kitti/preprocess/folder`.
