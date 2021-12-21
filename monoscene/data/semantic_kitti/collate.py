@@ -37,6 +37,11 @@ def collate_fn(batch):
 
         frame_ids.append(input_dict["frame_id"])
         sequences.append(input_dict["sequence"])
+        
+        
+        target = torch.from_numpy(input_dict["target"])
+        targets.append(target)
+        CP_mega_matrices.append(torch.from_numpy(input_dict["CP_mega_matrix"]))            
 
     ret_data = {
         "frame_id": frame_ids,
@@ -46,13 +51,10 @@ def collate_fn(batch):
         "cam_k": cam_ks,
         "T_velo_2_cam": T_velo_2_cams,
         "img": torch.stack(imgs),
+        "CP_mega_matrices": CP_mega_matrices,
+        "target": torch.stack(targets)
     }
-    if "target" in input_dict:
-        target = torch.from_numpy(input_dict["target"])
-        targets.append(target)
-        CP_mega_matrices.append(torch.from_numpy(input_dict["CP_mega_matrix"]))
-        ret_data["CP_mega_matrices"] = CP_mega_matrices
-        ret_data["target"] = torch.stack(targets)
+    
 
     for key in data:
         ret_data[key] = data[key]
