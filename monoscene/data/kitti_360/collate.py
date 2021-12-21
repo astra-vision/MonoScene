@@ -33,14 +33,14 @@ def collate_fn(batch):
 
         frame_ids.append(input_dict["frame_id"])
 
-        ret_data = {
-            "sequence": sequences,
-            "frame_id": frame_ids,
-            "cam_k": cam_ks,
-            "T_velo_2_cam": T_velo_2_cams,
-            "img": torch.stack(imgs),
-            "img_path": img_paths,
-        }
+    ret_data = {
+        "sequence": sequences,
+        "frame_id": frame_ids,
+        "cam_k": cam_ks,
+        "T_velo_2_cam": T_velo_2_cams,
+        "img": torch.stack(imgs),
+        "img_path": img_paths,
+    }
     for key in data:
         ret_data[key] = data[key]
 
