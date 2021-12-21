@@ -29,7 +29,7 @@ def get_grid_coords(dims, resolution):
     temp[:, 1] = coords_grid[:, 0]
     coords_grid = np.copy(temp)
 
-    return coords_grid, g_xx, g_yy, g_zz
+    return coords_grid
 
 
 def draw(
