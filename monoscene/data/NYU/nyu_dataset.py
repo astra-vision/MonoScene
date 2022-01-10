@@ -81,7 +81,7 @@ class NYUDataset(Dataset):
         data["CP_mega_matrix"] = CP_mega_matrix
 
         # compute the 3D-2D mapping
-        projected_pix, fov_mask, sensor_distance = vox2pix(
+        projected_pix, fov_mask, pix_z = vox2pix(
             T_world_2_cam,
             self.cam_k,
             vox_origin,
@@ -90,13 +90,14 @@ class NYUDataset(Dataset):
             self.img_H,
             self.scene_size,
         )
+        
         data["projected_pix_1"] = projected_pix
         data["fov_mask_1"] = fov_mask
 
         # compute the masks, each indicates voxels inside a frustum
         frustums_masks, frustums_class_dists = compute_local_frustums(
             projected_pix,
-            sensor_distance,
+            pix_z,
             target,
             self.img_W,
             self.img_H,

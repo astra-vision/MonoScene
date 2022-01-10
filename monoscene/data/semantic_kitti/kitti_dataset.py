@@ -109,7 +109,7 @@ class KittiDataset(Dataset):
         for scale_3d in scale_3ds:
 
             # compute the 3D-2D mapping
-            projected_pix, fov_mask, sensor_distance = vox2pix(
+            projected_pix, fov_mask, pix_z = vox2pix(
                 T_velo_2_cam,
                 cam_k,
                 self.vox_origin,
@@ -117,10 +117,10 @@ class KittiDataset(Dataset):
                 self.img_W,
                 self.img_H,
                 self.scene_size,
-            )
+            )            
 
             data["projected_pix_{}".format(scale_3d)] = projected_pix
-            data["sensor_distance_{}".format(scale_3d)] = sensor_distance
+            data["pix_z_{}".format(scale_3d)] = pix_z
             data["fov_mask_{}".format(scale_3d)] = fov_mask
 
         target_1_path = os.path.join(self.label_root, sequence, frame_id + "_1_1.npy")
@@ -134,12 +134,12 @@ class KittiDataset(Dataset):
         # Compute the masks, each indicate the voxels of a local frustum
         if self.split != "test":
             projected_pix_output = data["projected_pix_{}".format(self.output_scale)]
-            sensor_distance_output = data[
-                "sensor_distance_{}".format(self.output_scale)
+            pix_z_output = data[
+                "pix_z_{}".format(self.output_scale)
             ]
             frustums_masks, frustums_class_dists = compute_local_frustums(
                 projected_pix_output,
-                sensor_distance_output,
+                pix_z_output,
                 target,
                 self.img_W,
                 self.img_H,

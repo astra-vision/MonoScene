@@ -79,7 +79,7 @@ def vox2pix(cam_E, cam_k,
         Projected 2D positions of voxels
     fov_mask: (N,)
         Voxels mask indice voxels inside image's FOV 
-    sensor_distance: (N,)
+    pix_z: (N,)
         Voxels'distance to the sensor in meter
     """
     # Compute the x, y, z bounding of the scene in meter
@@ -110,26 +110,26 @@ def vox2pix(cam_E, cam_k,
     pix_x, pix_y = projected_pix[:, 0], projected_pix[:, 1]
 
     # Eliminate pixels outside view frustum
-    sensor_distance = cam_pts[:, 2]
+    pix_z = cam_pts[:, 2]
     fov_mask = np.logical_and(pix_x >= 0,
                 np.logical_and(pix_x < img_W,
                 np.logical_and(pix_y >= 0,
                 np.logical_and(pix_y < img_H,
-                sensor_distance > 0))))
+                pix_z > 0))))
 
 
-    return projected_pix, fov_mask, sensor_distance
+    return projected_pix, fov_mask, pix_z
 
 
-def compute_local_frustum(pix_x, pix_y, min_x, max_x, min_y, max_y, sensor_distance):
+def compute_local_frustum(pix_x, pix_y, min_x, max_x, min_y, max_y, pix_z):
     valid_pix = np.logical_and(pix_x >= min_x,
                 np.logical_and(pix_x < max_x,
                 np.logical_and(pix_y >= min_y,
                 np.logical_and(pix_y < max_y,
-                sensor_distance > 0))))
+                pix_z > 0))))
     return valid_pix
 
-def compute_local_frustums(projected_pix, sensor_distance, target, img_W, img_H, dataset, n_classes, size=4):
+def compute_local_frustums(projected_pix, pix_z, target, img_W, img_H, dataset, n_classes, size=4):
     """
     Compute the local frustums mask and their class frequencies
     
@@ -137,7 +137,7 @@ def compute_local_frustums(projected_pix, sensor_distance, target, img_W, img_H,
     ----------
     projected_pix: (N, 2)
         2D projected pix of all voxels
-    sensor_distance: (N,)
+    pix_z: (N,)
         Distance of the camera sensor to voxels
     target: (H, W, D)
         Voxelized sematic labels
@@ -170,7 +170,7 @@ def compute_local_frustums(projected_pix, sensor_distance, target, img_W, img_H,
             end_x = x[1] * img_W
             start_y = y[0] * img_H
             end_y = y[1] * img_H
-            local_frustum = compute_local_frustum(pix_x, pix_y, start_x, end_x, start_y, end_y, sensor_distance)
+            local_frustum = compute_local_frustum(pix_x, pix_y, start_x, end_x, start_y, end_y, pix_z)
             if dataset == "NYU":
                 mask = (target != 255) & np.moveaxis(local_frustum.reshape(60, 60, 36), [0, 1, 2], [0, 2, 1])
             elif dataset == "kitti":
