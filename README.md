@@ -111,7 +111,7 @@ $ python monoscene/data/semantic_kitti/preprocess.py kitti_root=$KITTI_ROOT kitt
 
 ### NYUv2
 
-1. Download the NYUv2 dataset using [this script](https://github.com/shurans/sscnet/blob/master/download_data.sh).
+1. Download the [NYUv2 dataset](https://drive.google.com/file/d/1SBkrJPVgVizPYD4_8GCQSC5BiB9Ksqfe/view?usp=sharing).
 
 2. Create a folder to store NYUv2 preprocess data at `/path/to/NYU/preprocess/folder`.
 
