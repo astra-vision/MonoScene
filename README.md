@@ -72,7 +72,7 @@ $ pip install -r requirements.txt
 4. Install tbb:
 
 ```
-$ conda install tbb
+$ conda install -c bioconda tbb=2020.2
 ```
 
 5. Finally, install MonoScene:
@@ -282,6 +282,11 @@ $ python monoscene/scripts/generate_output.py \
 ## Visualization
 
 We use mayavi to visualize the predictions. Please install mayavi following the [official installation instruction](https://docs.enthought.com/mayavi/mayavi/installation.html). Then, use the following commands to visualize the outputs on respective datasets.
+
+If you have trouble installing mayavi, the following comments might help:
+
+- https://github.com/cv-rits/MonoScene/issues/6#issuecomment-1009260023
+- https://github.com/cv-rits/MonoScene/issues/3#issuecomment-998662257
 
 ### NYUv2 
 
