@@ -109,10 +109,10 @@ class Kitti360Dataset(Dataset):
 
         scale_3ds = [self.project_scale, self.output_scale]
         data["scale_3ds"] = scale_3ds
-        T_cam_2_velo = np.linalg.inv(self.T_velo_2_cam)
+        
         for scale_3d in scale_3ds:
             projected_pix, fov_mask, _ = vox2pix(
-                T_cam_2_velo,
+                self.T_velo_2_cam,
                 self.cam_k,
                 self.vox_origin,
                 self.voxel_size * scale_3d,
