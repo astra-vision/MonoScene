@@ -3,7 +3,7 @@
 **MonoScene: Monocular 3D Semantic Scene Completion**] \[[arXiv + supp](https://arxiv.org/abs/2112.00726)\] | \[[Project page](https://cv-rits.github.io/MonoScene/)\] \
 [Anh-Quan Cao](https://anhquancao.github.io),
 [Raoul de Charette](https://team.inria.fr/rits/membres/raoul-de-charette/)  
-Inria, Paris, France
+Inria, Paris, France. CVPR 2022.
 
 If you find this work useful, please cite our [paper](https://arxiv.org/abs/2112.00726):
 ```
