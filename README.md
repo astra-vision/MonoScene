@@ -7,13 +7,11 @@ Inria, Paris, France. CVPR 2022.
 
 If you find this work useful, please cite our [paper](https://arxiv.org/abs/2112.00726):
 ```
-@misc{cao2021monoscene,
-      title={MonoScene: Monocular 3D Semantic Scene Completion}, 
-      author={Anh-Quan Cao and Raoul de Charette},
-      year={2021},
-      eprint={2112.00726},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@inproceedings{cao2022monoscene,
+    title={MonoScene: Monocular 3D Semantic Scene Completion}, 
+    author={Anh-Quan Cao and Raoul de Charette},
+    booktitle={CVPR},
+    year={2022}
 }
 ```
 
