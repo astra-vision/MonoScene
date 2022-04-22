@@ -62,7 +62,7 @@ def main(config: DictConfig):
             frustum_size=config.frustum_size,
             project_scale=project_scale,
             batch_size=int(config.batch_size / config.n_gpus),
-            num_workers=int(config.num_workers_per_gpu * config.n_gpus),
+            num_workers=int(config.num_workers_per_gpu),
         )
 
     elif config.dataset == "NYU":
