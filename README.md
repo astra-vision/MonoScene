@@ -1,5 +1,9 @@
 # MonoScene: Monocular 3D Semantic Scene Completion
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/monoscene-monocular-3d-semantic-scene/3d-semantic-scene-completion-from-a-single-2d-1)](https://paperswithcode.com/sota/3d-semantic-scene-completion-from-a-single-2d-1?p=monoscene-monocular-3d-semantic-scene)
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/monoscene-monocular-3d-semantic-scene/3d-semantic-scene-completion-from-a-single-2d)](https://paperswithcode.com/sota/3d-semantic-scene-completion-from-a-single-2d?p=monoscene-monocular-3d-semantic-scene)
+
 **MonoScene: Monocular 3D Semantic Scene Completion**] \[[arXiv + supp](https://arxiv.org/abs/2112.00726)\] | \[[Project page](https://cv-rits.github.io/MonoScene/)\] \
 [Anh-Quan Cao](https://anhquancao.github.io),
 [Raoul de Charette](https://team.inria.fr/rits/membres/raoul-de-charette/)  
