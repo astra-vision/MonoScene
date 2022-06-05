@@ -8,7 +8,7 @@
 [Anh-Quan Cao](https://anhquancao.github.io),
 [Raoul de Charette](https://team.inria.fr/rits/membres/raoul-de-charette/)  
 Inria, Paris, France.  
-CVPR 2022 - **Poster Session 1.2, Tuesday (21/06) afternoon, New Orleans :clapper:**
+CVPR 2022 - **Poster Session 1.2, Tuesday (21/06) afternoon, New Orleans :us:**
 
 If you find this work useful, please cite our [paper](https://arxiv.org/abs/2112.00726):
 ```
