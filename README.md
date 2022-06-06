@@ -10,7 +10,7 @@
 Inria, Paris, France.  
 CVPR 2022 - **Poster Session 1.2, Tuesday (21/06) afternoon, New Orleans :us:**
 
-If you find this work useful, please cite our [paper](https://arxiv.org/abs/2112.00726):
+If you find this work useful, please cite our [paper](https://arxiv.org/abs/2112.00726) and [give us a star](https://github.com/cv-rits/MonoScene/stargazers):
 ```
 @inproceedings{cao2022monoscene,
     title={MonoScene: Monocular 3D Semantic Scene Completion}, 
