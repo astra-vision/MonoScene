@@ -36,6 +36,7 @@ If you find this work or code useful, please cite our [paper](https://arxiv.org/
 </p>
 
 # Table of Content
+- [News](#news)
 - [Preparing MonoScene](#preparing-monoscene)
   - [Installation](#installation)  
   - [Datasets](#datasets)
@@ -48,10 +49,14 @@ If you find this work or code useful, please cite our [paper](https://arxiv.org/
   - [Visualization](#visualization)
 - [License](#license)
 
+# News
+- 9/6/2022: We fixed the installation errors mentioned in https://github.com/cv-rits/MonoScene/issues/18
 
 # Preparing MonoScene
 
 ## Installation
+
+
 
 1. Create conda environment:
 

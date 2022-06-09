@@ -4,6 +4,7 @@ Code adapted from https://github.com/shariqfarooq123/AdaBins/blob/main/models/un
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+import os
 
 
 class UpSampleBN(nn.Module):
@@ -192,3 +193,6 @@ class UNet2D(nn.Module):
         m = cls(basemodel, num_features=num_features, **kwargs)
         print("Done.")
         return m
+
+if __name__ == '__main__':
+    model = UNet2D.build(out_feature=256, use_decoder=True)

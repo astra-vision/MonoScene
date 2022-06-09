@@ -142,7 +142,7 @@ def main(config: DictConfig):
             callbacks=checkpoint_callbacks,
             resume_from_checkpoint=model_path,
             sync_batchnorm=True,
-            deterministic=True,
+            deterministic=False,
             max_epochs=max_epochs,
             gpus=config.n_gpus,
             logger=logger,
@@ -156,7 +156,7 @@ def main(config: DictConfig):
         trainer = Trainer(
             callbacks=checkpoint_callbacks,
             sync_batchnorm=True,
-            deterministic=True,
+            deterministic=False,
             max_epochs=max_epochs,
             gpus=config.n_gpus,
             logger=logger,
