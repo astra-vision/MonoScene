@@ -50,7 +50,7 @@ If you find this work or code useful, please cite our [paper](https://arxiv.org/
 - [License](#license)
 
 # News
-- 9/6/2022: We fixed the installation errors mentioned in https://github.com/cv-rits/MonoScene/issues/18
+- 9/6/2022: We fixed the installation errors mentioned in https://github.com/cv-rits/MonoScene/issues/18 :mega:
 
 # Preparing MonoScene
 
