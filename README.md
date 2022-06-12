@@ -294,7 +294,7 @@ We use mayavi to visualize the predictions. Please install mayavi following the 
 
 If you have **trouble installing mayavi**, you can take a look at our [**mayavi installation guide**](https://anhquancao.github.io/blog/2022/mayavi-install/)
 
-You also need to install omegaconf and hydra-core packages, used by the visualization scripts:
+You also need to install omegaconf and hydra-core packages, used by the visualization scripts using the commands:
 ```
 pip install omegaconf
 pip install hydra-core
