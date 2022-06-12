@@ -50,7 +50,8 @@ If you find this work or code useful, please cite our [paper](https://arxiv.org/
 - [License](#license)
 
 # News
-- 9/6/2022: We fixed the installation errors mentioned in https://github.com/cv-rits/MonoScene/issues/18 :mega:
+- 12/6/2022: We added a guide on [how to install mayavi](https://anhquancao.github.io/blog/2022/mayavi-install/) :mega:
+- 9/6/2022: We fixed the installation errors mentioned in https://github.com/cv-rits/MonoScene/issues/18 
 
 # Preparing MonoScene
 
@@ -291,10 +292,7 @@ $ python monoscene/scripts/generate_output.py \
 
 We use mayavi to visualize the predictions. Please install mayavi following the [official installation instruction](https://docs.enthought.com/mayavi/mayavi/installation.html). Then, use the following commands to visualize the outputs on respective datasets.
 
-If you have trouble installing mayavi, the following comments might help:
-
-- https://github.com/cv-rits/MonoScene/issues/6#issuecomment-1009260023
-- https://github.com/cv-rits/MonoScene/issues/3#issuecomment-998662257
+If you have **trouble installing mayavi**, you can take a look at our [**mayavi installation guide**](https://anhquancao.github.io/blog/2022/mayavi-install/)
 
 ### NYUv2 
 
