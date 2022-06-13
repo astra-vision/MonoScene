@@ -51,7 +51,7 @@ If you find this work or code useful, please cite our [paper](https://arxiv.org/
 
 # News
 - 13/6/2022: We added a tutorial on [How to define viewpoint programmatically in mayavi](https://anhquancao.github.io/blog/2022/how-to-define-viewpoint-programmatically-in-mayavi/) :mega:
-- 12/6/2022: We added a guide on [how to install mayavi](https://anhquancao.github.io/blog/2022/mayavi-install/) :mega:
+- 12/6/2022: We added a guide on [how to install mayavi](https://anhquancao.github.io/blog/2022/how-to-install-mayavi-with-python-3-on-ubuntu-2004-using-pip-or-anaconda/) :mega:
 - 9/6/2022: We fixed the installation errors mentioned in https://github.com/cv-rits/MonoScene/issues/18 
 
 # Preparing MonoScene
