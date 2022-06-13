@@ -50,6 +50,7 @@ If you find this work or code useful, please cite our [paper](https://arxiv.org/
 - [License](#license)
 
 # News
+- 13/6/2022: We added a tutorial on [How to define viewpoint programmatically in mayavi](https://anhquancao.github.io/blog/2022/how-to-define-viewpoint-programmatically-in-mayavi/) :mega:
 - 12/6/2022: We added a guide on [how to install mayavi](https://anhquancao.github.io/blog/2022/mayavi-install/) :mega:
 - 9/6/2022: We fixed the installation errors mentioned in https://github.com/cv-rits/MonoScene/issues/18 
 
@@ -292,7 +293,9 @@ $ python monoscene/scripts/generate_output.py \
 
 We use mayavi to visualize the predictions. Please install mayavi following the [official installation instruction](https://docs.enthought.com/mayavi/mayavi/installation.html). Then, use the following commands to visualize the outputs on respective datasets.
 
-If you have **trouble installing mayavi**, you can take a look at our [**mayavi installation guide**](https://anhquancao.github.io/blog/2022/mayavi-install/)
+If you have **trouble installing mayavi**, you can take a look at our [**mayavi installation guide**](https://anhquancao.github.io/blog/2022/how-to-install-mayavi-with-python-3-on-ubuntu-2004-using-pip-or-anaconda/).
+
+If you have **trouble fixing mayavi viewpoint**, you can take a look at [**our tutorial**](https://anhquancao.github.io/blog/2022/how-to-define-viewpoint-programmatically-in-mayavi/).
 
 You also need to install some packages used by the visualization scripts using the commands:
 ```
