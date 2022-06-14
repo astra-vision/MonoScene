@@ -4,13 +4,16 @@
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/monoscene-monocular-3d-semantic-scene/3d-semantic-scene-completion-from-a-single-1)](https://paperswithcode.com/sota/3d-semantic-scene-completion-from-a-single-1?p=monoscene-monocular-3d-semantic-scene)
 
-**MonoScene: Monocular 3D Semantic Scene Completion**] \[[arXiv + supp](https://arxiv.org/abs/2112.00726)\] | \[[Project page](https://cv-rits.github.io/MonoScene/)\] \
+**MonoScene: Monocular 3D Semantic Scene Completion**\
 [Anh-Quan Cao](https://anhquancao.github.io),
 [Raoul de Charette](https://team.inria.fr/rits/membres/raoul-de-charette/)  
 Inria, Paris, France.  
-CVPR 2022 - **Poster Session 1.2, Tuesday (21/06) afternoon, New Orleans :us:**
+CVPR 2022 \
+[![arXiv](https://img.shields.io/badge/arXiv%20%2B%20supp-2112.00726-purple)](https://arxiv.org/abs/2112.00726) 
+[![Project page](https://img.shields.io/badge/Project%20Page-MonoScene-red)](https://astra-vision.github.io/MonoScene/)
+[![Live demo](https://img.shields.io/badge/Live%20demo-Hugging%20Face-yellow)](https://huggingface.co/spaces/CVPR/MonoScene)
 
-If you find this work or code useful, please cite our [paper](https://arxiv.org/abs/2112.00726) and [give this repo a star](https://github.com/cv-rits/MonoScene/stargazers):
+If you find this work or code useful, please cite our [paper](https://arxiv.org/abs/2112.00726) and [give this repo a star](https://github.com/astra-vision/MonoScene/stargazers):
 ```
 @inproceedings{cao2022monoscene,
     title={MonoScene: Monocular 3D Semantic Scene Completion}, 
@@ -47,12 +50,15 @@ If you find this work or code useful, please cite our [paper](https://arxiv.org/
 - [Inference & Visualization](#inference--visualization)
   - [Inference](#inference)
   - [Visualization](#visualization)
+- [Followup Works](#followup-works)
 - [License](#license)
 
 # News
-- 13/6/2022: We added a tutorial on [How to define viewpoint programmatically in mayavi](https://anhquancao.github.io/blog/2022/how-to-define-viewpoint-programmatically-in-mayavi/) :mega:
-- 12/6/2022: We added a guide on [how to install mayavi](https://anhquancao.github.io/blog/2022/how-to-install-mayavi-with-python-3-on-ubuntu-2004-using-pip-or-anaconda/) :mega:
-- 9/6/2022: We fixed the installation errors mentioned in https://github.com/cv-rits/MonoScene/issues/18 
+- 6/12/2022: We extend MonoScene to self-supervised setting but geometry-only estimation in [the followup work: SceneRF](https://astra-vision.github.io/SceneRF/) :mega:
+- 28/6/2022: We added [MonoScene demo on Hugging Face](https://huggingface.co/spaces/CVPR/MonoScene) 
+- 13/6/2022: We added a tutorial on [How to define viewpoint programmatically in mayavi](https://anhquancao.github.io/blog/2022/how-to-define-viewpoint-programmatically-in-mayavi/) 
+- 12/6/2022: We added a guide on [how to install mayavi](https://anhquancao.github.io/blog/2022/how-to-install-mayavi-with-python-3-on-ubuntu-2004-using-pip-or-anaconda/) 
+- 9/6/2022: We fixed the installation errors mentioned in https://github.com/astra-vision/MonoScene/issues/18 
 
 # Preparing MonoScene
 
@@ -85,7 +91,12 @@ $ pip install -r requirements.txt
 $ conda install -c bioconda tbb=2020.2
 ```
 
-5. Finally, install MonoScene:
+5. Downgrade torchmetrics to 0.6.0
+```
+$ pip install torchmetrics==0.6.0
+```
+
+6. Finally, install MonoScene:
 
 ```
 $ pip install -e ./
@@ -326,7 +337,20 @@ $ cd MonoScene/
 $ python monoscene/scripts/visualization/kitti_vis_pred.py +file=/path/to/output/file.pkl +dataset=kitti_360
 ```
 
+# Followup Works
+### [SceneRF: Self-Supervised Monocular 3D Scene Reconstruction with Radiance Fields](https://astra-vision.github.io/SceneRF/) 
 
+We leverage generalizable neural radiance field (NeRF) to generate novel depths/views, conditioned on a single input frame. The novel depths/views are subsequently used to reconstruct the 3D mesh of the scene.
+<table>
+<tr>
+    <td align="center">Novel depths synthesis</td>
+    <td align="center">3D Reconstruction</td>
+</tr>
+<tr>
+    <td><img style="width:100%" src="./teaser/novel_depths.gif"</td>
+    <td><img style="width:100%" src="./teaser/3d_recon.gif" /></td>
+</tr>
+</table>
 
 # License
 MonoScene is released under the [Apache 2.0 license](./LICENSE).
