@@ -85,7 +85,12 @@ $ pip install -r requirements.txt
 $ conda install -c bioconda tbb=2020.2
 ```
 
-5. Finally, install MonoScene:
+5. Downgrade torchmetrics to 0.6.0
+```
+$ pip install torchmetrics==0.6.0
+```
+
+6. Finally, install MonoScene:
 
 ```
 $ pip install -e ./
