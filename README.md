@@ -4,11 +4,11 @@
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/monoscene-monocular-3d-semantic-scene/3d-semantic-scene-completion-from-a-single-1)](https://paperswithcode.com/sota/3d-semantic-scene-completion-from-a-single-1?p=monoscene-monocular-3d-semantic-scene)
 
-**MonoScene: Monocular 3D Semantic Scene Completion**] \[[arXiv + supp](https://arxiv.org/abs/2112.00726)\] | \[[Project page](https://cv-rits.github.io/MonoScene/)\] \
+**MonoScene: Monocular 3D Semantic Scene Completion**] \[[arXiv + supp](https://arxiv.org/abs/2112.00726)\] | \[[Project page](https://cv-rits.github.io/MonoScene/)\] | \[[Live demo](https://huggingface.co/spaces/CVPR/MonoScene)\]\
 [Anh-Quan Cao](https://anhquancao.github.io),
 [Raoul de Charette](https://team.inria.fr/rits/membres/raoul-de-charette/)  
 Inria, Paris, France.  
-CVPR 2022 - **Poster Session 1.2, Tuesday (21/06) afternoon, New Orleans :us:**
+CVPR 2022
 
 If you find this work or code useful, please cite our [paper](https://arxiv.org/abs/2112.00726) and [give this repo a star](https://github.com/cv-rits/MonoScene/stargazers):
 ```
@@ -50,7 +50,7 @@ If you find this work or code useful, please cite our [paper](https://arxiv.org/
 - [License](#license)
 
 # News
-- 27/6/2022: We are training MonoScene on KITTI360 and will soon release the model. [Stay tuned!](https://github.com/cv-rits/MonoScene/watchers) :mega:
+- 28/6/2022: We added [MonoScene demo on Hugging Face](https://huggingface.co/spaces/CVPR/MonoScene) :mega:
 - 13/6/2022: We added a tutorial on [How to define viewpoint programmatically in mayavi](https://anhquancao.github.io/blog/2022/how-to-define-viewpoint-programmatically-in-mayavi/) 
 - 12/6/2022: We added a guide on [how to install mayavi](https://anhquancao.github.io/blog/2022/how-to-install-mayavi-with-python-3-on-ubuntu-2004-using-pip-or-anaconda/) 
 - 9/6/2022: We fixed the installation errors mentioned in https://github.com/cv-rits/MonoScene/issues/18 
