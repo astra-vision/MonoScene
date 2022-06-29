@@ -4,7 +4,10 @@
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/monoscene-monocular-3d-semantic-scene/3d-semantic-scene-completion-from-a-single-1)](https://paperswithcode.com/sota/3d-semantic-scene-completion-from-a-single-1?p=monoscene-monocular-3d-semantic-scene)
 
-**MonoScene: Monocular 3D Semantic Scene Completion**] \[[arXiv + supp](https://arxiv.org/abs/2112.00726)\] | \[[Project page](https://cv-rits.github.io/MonoScene/)\] | \[[Live demo](https://huggingface.co/spaces/CVPR/MonoScene)\]\
+**MonoScene: Monocular 3D Semantic Scene Completion**] 
+[![arXiv](https://img.shields.io/badge/arXiv%20%2B%20supp-2112.00726-purple)](https://arxiv.org/abs/2112.00726) 
+[![Project page](https://img.shields.io/badge/Project%20Page-MonoScene-red)](https://cv-rits.github.io/MonoScene/)
+[![Live demo](https://img.shields.io/badge/Live%20demo-Hugging%20Face-yellow)](https://huggingface.co/spaces/CVPR/MonoScene)\
 [Anh-Quan Cao](https://anhquancao.github.io),
 [Raoul de Charette](https://team.inria.fr/rits/membres/raoul-de-charette/)  
 Inria, Paris, France.  
