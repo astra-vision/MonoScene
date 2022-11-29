@@ -1,0 +1,332 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <meta charset="utf-8">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PY21MN7T6R"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-PY21MN7T6R');
+    </script>
+
+    <meta name="author" content="Anh-Quan Cao">
+    <meta name="description" content="MonoScene: Monocular 3D Semantic Scene Completion">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <!-- Primary Meta Tags -->
+    <title>MonoScene: Monocular 3D Semantic Scene Completion</title>
+    <meta name="title" content="MonoScene: Monocular 3D Semantic Scene Completion">
+    <meta name="description" content="MonoScene proposes a 3D Semantic Scene Completion (SSC) framework, where the dense geometry and semantics of a scene are inferred from a single monocular RGB image. Different from the SSC literature, relying on 2.5 or 3D input, we solve the complex problem of 2D to 3D scene reconstruction while jointly inferring its semantics. Our framework relies on successive 2D and 3D UNets bridged by a novel 2D-3D features projection inspiring from optics and introduces a 3D context relation prior to enforce spatio-semantic consistency. Along with architectural contributions, we introduce novel global scene and local frustums losses. Experiments show we outperform the literature on all metrics and datasets while hallucinating plausible scenery even beyond the camera field of view.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://cv-rits.github.io/MonoScene/">
+    <meta property="og:title" content="MonoScene: Monocular 3D Semantic Scene Completion">
+    <meta property="og:description" content="MonoScene proposes a 3D Semantic Scene Completion (SSC) framework, where the dense geometry and semantics of a scene are inferred from a single monocular RGB image. Different from the SSC literature, relying on 2.5 or 3D input, we solve the complex problem of 2D to 3D scene reconstruction while jointly inferring its semantics. Our framework relies on successive 2D and 3D UNets bridged by a novel 2D-3D features projection inspiring from optics and introduces a 3D context relation prior to enforce spatio-semantic consistency. Along with architectural contributions, we introduce novel global scene and local frustums losses. Experiments show we outperform the literature on all metrics and datasets while hallucinating plausible scenery even beyond the camera field of view.">
+    <meta property="og:image" content="./imgs/SemKITTI.gif">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://cv-rits.github.io/MonoScene/">
+    <meta property="twitter:title" content="MonoScene: Monocular 3D Semantic Scene Completion">
+    <meta property="twitter:description" content="MonoScene proposes a 3D Semantic Scene Completion (SSC) framework, where the dense geometry and semantics of a scene are inferred from a single monocular RGB image. Different from the SSC literature, relying on 2.5 or 3D input, we solve the complex problem of 2D to 3D scene reconstruction while jointly inferring its semantics. Our framework relies on successive 2D and 3D UNets bridged by a novel 2D-3D features projection inspiring from optics and introduces a 3D context relation prior to enforce spatio-semantic consistency. Along with architectural contributions, we introduce novel global scene and local frustums losses. Experiments show we outperform the literature on all metrics and datasets while hallucinating plausible scenery even beyond the camera field of view.">
+    <meta property="twitter:image" content="./imgs/SemKITTI.gif">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    
+    
+
+    <title>MonoScene: Monocular 3D Semantic Scene Completion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container" style="text-align:center; padding:10px">        
+        <div class="row" style="text-align:center;margin-top: 30px;">
+            <h1>MonoScene: Monocular 3D Semantic Scene Completion</h1>            
+        </div>      
+        <div class="row" style="text-align:center;margin-top: 30px;">
+            <h3>CVPR 2022</h3>            
+        </div>     
+        <div class="row" style="text-align:center;margin-top: 30px;">
+            <h4>
+              <a href="https://anhquancao.github.io/" target="_blank"><nobr>Anh-Quan Cao</nobr></a>, 
+              <a href="https://team.inria.fr/rits/membres/raoul-de-charette/" target="_blank"><nobr>Raoul de Charette</nobr></a> &emsp;
+            </h4>
+            <div style="height: 10px;"></div>
+            <div style="text-align: center;">
+                <img src="imgs/inr_logo_rouge.png" class="img-fluid" style="width: 180px;" alt="Inria logo"/>        
+            </div>
+        </div>
+        <div class="sep"></div>
+
+        <div class="row" style="text-align:center; margin-top:15px">    
+            <div class="col-lg-4 col-sm-12">
+                <h6>NYUv2</h5>  
+                <img src="imgs/NYUv2.gif" class="img-fluid" alt="NYUv2 teaser">                               
+            </div>    
+            <div class="col-lg-4 col-sm-12">
+                <h6>Semantic KITTI</h5>                      
+                <img src="imgs/SemKITTI.gif" class="img-fluid" alt="Semantic KITTI teaser">                    
+            </div>         
+            <div class="col-lg-4 col-sm-12">
+                <h6>KITTI-360 (Trained on Semantic KITTI)</h5>                      
+                <img src="imgs/KITTI-360.gif" class="img-fluid" alt="KITTI-360 - Trained on Semantic KITTI teaser">                    
+            </div>         
+        </div>
+        <div class="sep"></div>
+        
+        <div class="row">
+            <div class="col-xs-12 col-md-2 col-sm-4 offset-md-3">
+                <a href="https://arxiv.org/abs/2112.00726" target="_blank">
+                    <div class="text-center">            
+                        Paper (arxiv)
+                    </div>
+                    <div class="text-center">
+                        <img src="imgs/paper_icon.png" style="height: 100px;" alt="paper link">                
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+                
+                <a href="https://github.com/cv-rits/MonoScene" target="_blank">
+                    <div class="text-center" style="width: 100%;">  
+                        Code 
+                    </div>
+                    <div class="text-center">
+                        <img src="imgs/github.png" style="height: 100px;" alt="github link">                
+                    </div>
+                    <div class="text-center" style="width: 100%;margin-top: 7px;">              
+                        <a class="github-button" data-size="large" href="https://github.com/cv-rits/MonoScene" data-icon="octicon-star" data-show-count="true" aria-label="Star ntkme/github-buttons on GitHub">Star</a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+                <a href="https://huggingface.co/spaces/CVPR/MonoScene" target="_blank">
+                    <div class="text-center" style="width: 100%;">            
+                        Live demo
+                    </div>
+                    <div class="text-center">
+                        <img src="imgs/hf.svg" style="height: 100px;" alt="github link">                
+                    </div>
+                    
+                </a>
+            </div>
+        </div>
+
+        <div class="sep"></div>
+
+        <div class="row">
+            <!-- Place this tag where you want the button to render. -->
+            
+            <p dir="auto"><a href="https://paperswithcode.com/sota/3d-semantic-scene-completion-from-a-single?p=monoscene-monocular-3d-semantic-scene" rel="nofollow"><img src="https://camo.githubusercontent.com/22c687311aea56c067855fb9f9eba83a727d8de92523857debb759d6837405ab/68747470733a2f2f696d672e736869656c64732e696f2f656e64706f696e742e7376673f75726c3d68747470733a2f2f70617065727377697468636f64652e636f6d2f62616467652f6d6f6e6f7363656e652d6d6f6e6f63756c61722d33642d73656d616e7469632d7363656e652f33642d73656d616e7469632d7363656e652d636f6d706c6574696f6e2d66726f6d2d612d73696e676c65" alt="PWC" data-canonical-src="https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/monoscene-monocular-3d-semantic-scene/3d-semantic-scene-completion-from-a-single" style="max-width: 100%;"></a></p>
+            <p dir="auto"><a href="https://paperswithcode.com/sota/3d-semantic-scene-completion-from-a-single-1?p=monoscene-monocular-3d-semantic-scene" rel="nofollow"><img src="https://camo.githubusercontent.com/c617bcb6cf170a7570ca9a175442839cfac1c48cb495c5266e681d62ea08bbb1/68747470733a2f2f696d672e736869656c64732e696f2f656e64706f696e742e7376673f75726c3d68747470733a2f2f70617065727377697468636f64652e636f6d2f62616467652f6d6f6e6f7363656e652d6d6f6e6f63756c61722d33642d73656d616e7469632d7363656e652f33642d73656d616e7469632d7363656e652d636f6d706c6574696f6e2d66726f6d2d612d73696e676c652d31" alt="PWC" data-canonical-src="https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/monoscene-monocular-3d-semantic-scene/3d-semantic-scene-completion-from-a-single-1" style="max-width: 100%;"></a></p>
+        </div>
+
+
+        <div class="sep"></div>
+
+        <div class="row" style="text-align:center; ">                  
+            <h2>Abstract</h2>       
+            <div class="col-2 offset-5 underline">
+                <hr>
+            </div>            
+            <div class="col-lg-6 offset-lg-3 col-sm-12" style="text-align: justify;"> 
+                MonoScene proposes a 3D Semantic Scene Completion (SSC) framework, where the dense geometry and semantics of a scene are inferred from a single monocular RGB image.
+        Different from the SSC literature, relying on 2.5 or 3D input, we solve the complex problem of 2D to 3D scene reconstruction while jointly inferring its semantics.
+        Our framework relies on successive 2D and 3D UNets bridged by a novel 2D-3D features projection inspiring from optics and introduces a 3D context relation prior to enforce spatio-semantic consistency. Along with architectural contributions, we introduce novel global scene and local frustums losses.
+        Experiments show we outperform the literature on all metrics and datasets while hallucinating plausible scenery even beyond the camera field of view.
+            </div>           
+        </div>
+    
+        
+
+        <div class="sep"></div>
+    
+        <div class="row" style="text-align:center; ">            
+            <h2>Demo video</h2>       
+            <div class="col-2 offset-5 underline">
+                <hr>
+            </div>    
+            <div class="col-lg-10 offset-lg-1 col-md-12">
+                <!-- <video style="width: 100%; height: auto;" controls src="imgs/monoscene_demo.mp4"></video> -->
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/qh7La1tRJmE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>            
+        </div>
+
+    
+        <div class="sep"></div>
+    
+        <div class="row" style="text-align:center; ">      
+            <h2>Method</h2>   
+            <div class="col-2 offset-5 underline">
+                <hr>
+            </div>    
+            <div class="col-lg-10 offset-lg-1 col-sm-12">
+                <img src="imgs/overview.png" width="100%" alt="MonoScene framework">                
+            </div>  
+            <div class="col-lg-10 offset-lg-1 col-sm-12" style="padding-top: 15px;padding-bottom: 15px;">
+                <h5>MonoScene framework</h5>
+                <div style="text-align: justify;"> We infer 3D SSC from a single RGB image, leveraging 2D and 3D UNets, bridged by our Features Line
+        of Sight Projection (FLoSP), and a 3D Context Relation Prior (3D CRP) to enhance spatio-semantic awareness. On top of standard cross-entropy, our Scene-Class Affinity loss
+        improves the global semantics and geometry and our Frustums Proportion loss enforces class distribution in local frustums, providing supervision beyond occlusions.
+                </div>
+            </div>           
+        </div>
+        <div class="row">        
+            <div class="col-lg-5 offset-lg-1 col-md-6 col-sm-12">
+                <img src="./imgs/flosp.gif" class="card-img-top" style="width: 60%;" alt="Features Line of Sight Projection (FLoSP)">
+                <div class="card-body">
+                    <p class="card-text">
+                        <h5>Features Line of Sight Projection (FLoSP)</h5> 
+                        <div style="text-align: justify;">
+                            We project multi-scale 2D 
+                            feature 2D along their line of sight by sampling them where the 3D voxels centroids project. 
+                            This boosts the 2D-3D information flow, and
+    let the 3D network discovers which 2D features are relevant.
+                        </div>
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6  col-sm-12">
+                <img src="./imgs/CRP3D.png" class="card-img-top" style="width: 100%;" alt="3D Context Relation Prior (3D CRP)">
+                <div class="card-body">
+                    <p class="card-text">
+                        <h5>3D Context Relation Prior (3D CRP)</h5> 
+                        <div style="text-align: justify;">
+                        We infer relation matrices (here, 4),
+                         where each encodes a unique voxels relation optionally supervised by a relation loss. 
+                         The matrices are multiplied with the supervoxels features to gather
+                         context, and later combined with input
+                         features. The feature dimension is omitted for clarity.
+                        </div>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-lg-5 offset-lg-1 col-md-6 col-sm-12">
+                <img src="./imgs/scal.png" class="card-img-top"  alt="Scene-Class Affinity Loss">
+                <div class="card-body">
+                    <p class="card-text">
+                        <h5>Scene-Class Affinity Loss</h5>
+                        <div style="text-align: justify;">
+                         We optimize the class-wise derivable
+                        (P)recision, (R)ecall and (S)pecificity where P and R
+                        measure the performance of similar class c voxels, and S
+                        measures the performance of dissimilar voxels (i.e. not of
+                        class c). 
+                        </div>
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-12">
+                <img src="./imgs/Frustum_loss.png" class="card-img-top"  alt="Frustums Proportion Loss">
+                <div class="card-body">
+                    <p class="card-text">
+                        <h5>Frustums Proportion Loss</h5>
+                        <div style="text-align: justify;">
+                        Considering an image divided into 
+                        same-size 2D patches (here, 2×2), each corresponds to
+                        a 3D frustum in the scene, we align the predicted frustum class 
+                        probabilities  with the corresponding ground truth.
+                        This provides cues to the network for occlusions disambiguation.
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sep"></div>
+
+        <div class="row">  
+            <h2>Qualitative results</h2>   
+            <div class="col-2 offset-5 underline">
+                <hr>
+            </div> 
+            <!-- <div class="col-lg-10 offset-lg-1 col-sm-12" style="text-align: justify;">
+                The input is shown left and the camera viewing frustum is
+                shown in the ground truth (rightmost) with darker colors being parts of scenes unseen by the image in (b). 
+                MonoScene better captures the
+                scene layout on both datasets. On indoor scene (a), it reconstructs thin objects like table legs (row 1), painting and tv (row 2), while in
+                outdoor (b), it better estimates occluded geometry e.g. car (row 1–3) and better hallucinates the scenery beyond the field of view (row 1–4).                
+            </div> -->
+            <div class="col-lg-12 col-sm-12" style="margin-top:10px;">
+                <img src="./imgs/NYU.png" class="card-img-top" alt="NYUv2 qualitative results"/>
+                <h6 style="margin-bottom: 15px;">NYUv2 (test set)</h6>
+                <img src="./imgs/kitti.png" class="card-img-top" alt="Semantic KITTI qualitative results">
+                <h6>Semantic KITTI (validation set)</h6>
+            </div>            
+        </div>
+        
+        <div class="sep"></div>
+
+        <div class="row">  
+            <h2>Bibtex</h2>   
+            <div class="col-2 offset-5 underline">
+                <hr>
+            </div> 
+            <div class="col-lg-8 offset-lg-2 col-sm-12">
+                <div>
+                    If you find this project useful for your research, please cite
+                    <div class="card-block" style="background-color: #f5f5f5; padding:8px;">
+                        <!-- <div class="card-text" style="text-align: left;background-color: #f5f5f5;">                                                 -->
+<pre class="card-text" style="text-align: left;">@inproceedings{cao2022monoscene,
+    title={MonoScene: Monocular 3D Semantic Scene Completion}, 
+    author={Anh-Quan Cao and Raoul de Charette},
+    booktitle={CVPR},
+    year={2022}
+}</pre>
+                        <!-- </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sep"></div>
+
+        <div class="row" style="text-align:center; ">      
+            <h2>Acknowledgements</h2>    
+            <div class="col-2 offset-5 underline">
+                <hr>
+            </div>     
+            <div class="col-12"></div>
+            <div class="col-lg-8 offset-lg-2 col-sm-12">
+                This work was performed using HPC resources from GENCI–IDRIS (Grant 2021-AD011012808) and was partially funded by PSPC SAMBA 2022.
+            </div>           
+        </div>
+        
+        <div class="sep"></div>
+
+        <div class="row" style="text-align:center; ">      
+            <h2>Copyright Notice</h2>    
+            <div class="col-2 offset-5 underline">
+                <hr>
+            </div>     
+            <div class="col-12"></div>
+            <div class="col-lg-8 offset-lg-2 col-sm-12" style="text-align: justify;">
+                The documents contained in these directories are included by the contributing authors as a means to ensure timely dissemination of scholarly and technical work on a non-commercial basis. Copyright and all rights therein are maintained by the authors or by other copyright holders, notwithstanding that they have offered their works here electronically. It is understood that all persons copying this information will adhere to the terms and constraints invoked by each author's copyright.
+            </div>           
+        </div>
+    </div>
+   
+    
+    <div style="height: 100px;"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>
