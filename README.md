@@ -10,7 +10,7 @@
 Inria, Paris, France.  
 CVPR 2022 \
 [![arXiv](https://img.shields.io/badge/arXiv%20%2B%20supp-2112.00726-purple)](https://arxiv.org/abs/2112.00726) 
-[![Project page](https://img.shields.io/badge/Project%20Page-MonoScene-red)](https://cv-rits.github.io/MonoScene/)
+[![Project page](https://img.shields.io/badge/Project%20Page-MonoScene-red)](https://astra-vision.github.io/MonoScene/)
 [![Live demo](https://img.shields.io/badge/Live%20demo-Hugging%20Face-yellow)](https://huggingface.co/spaces/CVPR/MonoScene)
 
 If you find this work or code useful, please cite our [paper](https://arxiv.org/abs/2112.00726) and [give this repo a star](https://github.com/cv-rits/MonoScene/stargazers):
