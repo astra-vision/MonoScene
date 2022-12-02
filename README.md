@@ -13,7 +13,7 @@ CVPR 2022 \
 [![Project page](https://img.shields.io/badge/Project%20Page-MonoScene-red)](https://astra-vision.github.io/MonoScene/)
 [![Live demo](https://img.shields.io/badge/Live%20demo-Hugging%20Face-yellow)](https://huggingface.co/spaces/CVPR/MonoScene)
 
-If you find this work or code useful, please cite our [paper](https://arxiv.org/abs/2112.00726) and [give this repo a star](https://github.com/cv-rits/MonoScene/stargazers):
+If you find this work or code useful, please cite our [paper](https://arxiv.org/abs/2112.00726) and [give this repo a star](https://github.com/astra-vision/MonoScene/stargazers):
 ```
 @inproceedings{cao2022monoscene,
     title={MonoScene: Monocular 3D Semantic Scene Completion}, 
@@ -56,7 +56,7 @@ If you find this work or code useful, please cite our [paper](https://arxiv.org/
 - 28/6/2022: We added [MonoScene demo on Hugging Face](https://huggingface.co/spaces/CVPR/MonoScene) :mega:
 - 13/6/2022: We added a tutorial on [How to define viewpoint programmatically in mayavi](https://anhquancao.github.io/blog/2022/how-to-define-viewpoint-programmatically-in-mayavi/) 
 - 12/6/2022: We added a guide on [how to install mayavi](https://anhquancao.github.io/blog/2022/how-to-install-mayavi-with-python-3-on-ubuntu-2004-using-pip-or-anaconda/) 
-- 9/6/2022: We fixed the installation errors mentioned in https://github.com/cv-rits/MonoScene/issues/18 
+- 9/6/2022: We fixed the installation errors mentioned in https://github.com/astra-vision/MonoScene/issues/18 
 
 # Preparing MonoScene
 
