@@ -340,7 +340,7 @@ $ python monoscene/scripts/visualization/kitti_vis_pred.py +file=/path/to/output
 # Followup Works
 ### [SceneRF: Self-Supervised Monocular 3D Scene Reconstruction with Radiance Fields](https://astra-vision.github.io/SceneRF/) 
 
-We leverage generalizable neural radiance field (NeRF) to generate novel depth views, conditioned on a single input frame. The novel depths are subsequently used to reconstruct the 3D mesh of the scene.
+We leverage generalizable neural radiance field (NeRF) to generate novel depths/views, conditioned on a single input frame. The novel depths/views are subsequently used to reconstruct the 3D mesh of the scene.
 <table>
 <tr>
     <td align="center">Novel depths synthesis</td>
