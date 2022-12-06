@@ -50,6 +50,7 @@ If you find this work or code useful, please cite our [paper](https://arxiv.org/
 - [Inference & Visualization](#inference--visualization)
   - [Inference](#inference)
   - [Visualization](#visualization)
+- [Followup Works](#followup-works)
 - [License](#license)
 
 # News
@@ -336,7 +337,20 @@ $ cd MonoScene/
 $ python monoscene/scripts/visualization/kitti_vis_pred.py +file=/path/to/output/file.pkl +dataset=kitti_360
 ```
 
+# Followup Works
+### [SceneRF: Self-Supervised Monocular 3D Scene Reconstruction with Radiance Fields](https://astra-vision.github.io/SceneRF/) 
 
+We leverage generalizable neural radiance field (NeRF) to generate novel depth views, conditioned on a single input frame. The novel depths are subsequently used to reconstruct the 3D mesh of the scene.
+<table>
+<tr>
+    <td align="center">Novel depths synthesis</td>
+    <td align="center">3D Reconstruction</td>
+</tr>
+<tr>
+    <td><img style="width:100%" src="./teaser/novel_depths.gif"</td>
+    <td><img style="width:100%" src="./teaser/3d_recon.gif" /></td>
+</tr>
+</table>
 
 # License
 MonoScene is released under the [Apache 2.0 license](./LICENSE).
