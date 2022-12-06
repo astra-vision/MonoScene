@@ -53,7 +53,8 @@ If you find this work or code useful, please cite our [paper](https://arxiv.org/
 - [License](#license)
 
 # News
-- 28/6/2022: We added [MonoScene demo on Hugging Face](https://huggingface.co/spaces/CVPR/MonoScene) :mega:
+- 6/12/2022: We extend MonoScene to Self-supervised setting but geometry-only in [a followup work: SceneRF](https://astra-vision.github.io/SceneRF/) :mega:
+- 28/6/2022: We added [MonoScene demo on Hugging Face](https://huggingface.co/spaces/CVPR/MonoScene) 
 - 13/6/2022: We added a tutorial on [How to define viewpoint programmatically in mayavi](https://anhquancao.github.io/blog/2022/how-to-define-viewpoint-programmatically-in-mayavi/) 
 - 12/6/2022: We added a guide on [how to install mayavi](https://anhquancao.github.io/blog/2022/how-to-install-mayavi-with-python-3-on-ubuntu-2004-using-pip-or-anaconda/) 
 - 9/6/2022: We fixed the installation errors mentioned in https://github.com/astra-vision/MonoScene/issues/18 
