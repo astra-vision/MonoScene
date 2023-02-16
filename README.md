@@ -1,8 +1,5 @@
 # MonoScene: Monocular 3D Semantic Scene Completion
 
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/monoscene-monocular-3d-semantic-scene/3d-semantic-scene-completion-from-a-single)](https://paperswithcode.com/sota/3d-semantic-scene-completion-from-a-single?p=monoscene-monocular-3d-semantic-scene)
-
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/monoscene-monocular-3d-semantic-scene/3d-semantic-scene-completion-from-a-single-1)](https://paperswithcode.com/sota/3d-semantic-scene-completion-from-a-single-1?p=monoscene-monocular-3d-semantic-scene)
 
 **MonoScene: Monocular 3D Semantic Scene Completion**\
 [Anh-Quan Cao](https://anhquancao.github.io),
