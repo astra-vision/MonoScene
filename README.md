@@ -338,19 +338,15 @@ $ python monoscene/scripts/visualization/kitti_vis_pred.py +file=/path/to/output
 ```
 
 # Followup Works
-### [SceneRF: Self-Supervised Monocular 3D Scene Reconstruction with Radiance Fields](https://astra-vision.github.io/SceneRF/) 
+### [SceneRF: Self-Supervised Monocular 3D Scene Reconstruction with Radiance Fields](https://astra-vision.github.io/SceneRF/), 
+Anh-Quan Cao, Raoul de Charette
 
-We leverage generalizable neural radiance field (NeRF) to generate novel depths/views, conditioned on a single input frame. The novel depths/views are subsequently used to reconstruct the 3D mesh of the scene.
-<table>
-<tr>
-    <td align="center">Novel depths synthesis</td>
-    <td align="center">3D Reconstruction</td>
-</tr>
-<tr>
-    <td><img style="width:100%" src="./teaser/novel_depths.gif"</td>
-    <td><img style="width:100%" src="./teaser/3d_recon.gif" /></td>
-</tr>
-</table>
+This work leverages generalizable neural radiance field (NeRF) to generate novel depths/views, conditioned on a single input frame. The novel depths/views are subsequently used to reconstruct the 3D mesh of the scene.
+
+### [Tri-Perspective View for Vision-Based 3D Semantic Occupancy Prediction](https://github.com/wzzheng/TPVFormer), 
+Yuanhui Huang*, Wenzhao Zheng* , Yunpeng Zhang, Jie Zhou, Jiwen Lu.
+
+An impressive works that predict the full 360-degree 3D semantic occupancy solely from images using Tri-plane representation with transformer.
 
 # License
 MonoScene is released under the [Apache 2.0 license](./LICENSE).
