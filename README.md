@@ -343,7 +343,7 @@ This work leverages generalizable neural radiance field (NeRF) to generate novel
 ### [Tri-Perspective View for Vision-Based 3D Semantic Occupancy Prediction](https://github.com/wzzheng/TPVFormer), 
 Yuanhui Huang*, Wenzhao Zheng* , Yunpeng Zhang, Jie Zhou, Jiwen Lu.
 
-An impressive works that predict the full 360-degree 3D semantic occupancy solely from images using Tri-plane representation with transformer.
+An impressive work that predicts the full 360-degree 3D semantic occupancy solely from images using Tri-plane representation with transformer.
 
 # License
 MonoScene is released under the [Apache 2.0 license](./LICENSE).
