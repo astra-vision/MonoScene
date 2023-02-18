@@ -47,6 +47,7 @@ If you find this work or code useful, please cite our [paper](https://arxiv.org/
 - [Inference & Visualization](#inference--visualization)
   - [Inference](#inference)
   - [Visualization](#visualization)
+  - [Docker Setup](#docker-setup)
 - [Followup Works](#followup-works)
 - [License](#license)
 
