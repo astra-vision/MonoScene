@@ -7,3 +7,4 @@ monoscene_output/*
 core*
 images
 .vscode
+nyu/NYU_dataset/depthbin/*
