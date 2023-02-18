@@ -333,6 +333,22 @@ $ python monoscene/scripts/visualization/kitti_vis_pred.py +file=/path/to/output
 $ cd MonoScene/ 
 $ python monoscene/scripts/visualization/kitti_vis_pred.py +file=/path/to/output/file.pkl +dataset=kitti_360
 ```
+## Docker Setup
+Here is Docker setup for MonoScene. You can use the following commands to build the docker image and run the container.
+
+Clone the git repository
+```
+git clone https://github.com/astra-vision/MonoScene.git
+cd MonoScene
+```
+Pull docker image
+```
+docker pull sohaibanwaar/monoscene
+```
+Run docker Image
+```
+docker run -it --gpus all -v /path/to/MonoScene:/MonoScene sohaibanwaar/monoscene /bin/bash
+```
 
 # Followup Works
 ### [SceneRF: Self-Supervised Monocular 3D Scene Reconstruction with Radiance Fields](https://astra-vision.github.io/SceneRF/), 
