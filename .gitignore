@@ -8,3 +8,4 @@ core*
 images
 .vscode
 nyu/NYU_dataset/depthbin/*
+jupyter_notebooks/.ipynb_checkpoints/NYU Inference-checkpoint.ipynb

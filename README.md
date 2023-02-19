@@ -39,6 +39,7 @@ If you find this work or code useful, please cite our [paper](https://arxiv.org/
 - [News](#news)
 - [Preparing MonoScene](#preparing-monoscene)
   - [Installation](#installation)  
+  - [Docker Setup](#docker-setup)
   - [Datasets](#datasets)
   - [Pretrained models](#pretrained-models)
 - [Running MonoScene](#running-monoscene)
@@ -47,7 +48,6 @@ If you find this work or code useful, please cite our [paper](https://arxiv.org/
 - [Inference & Visualization](#inference--visualization)
   - [Inference](#inference)
   - [Visualization](#visualization)
-  - [Docker Setup](#docker-setup)
 - [Followup Works](#followup-works)
 - [License](#license)
 
@@ -99,7 +99,36 @@ $ pip install torchmetrics==0.6.0
 ```
 $ pip install -e ./
 ```
+7. Configurations
+Setup your dataset and output data paths in 
+```
+MonoScene/monoscene/config/monoscene.yaml
+```
 
+# Docker Setup
+Here is Docker setup for MonoScene. You can use the following commands to build the docker image and run the container.
+
+Clone the git repository
+```
+git clone https://github.com/astra-vision/MonoScene.git
+cd MonoScene
+```
+Pull docker image
+```
+docker pull sohaibanwaar/monoscene
+```
+Run docker Image
+```
+docker run -it -p 8888:8888 --gpus all -v /path/to/MonoScene:/MonoScene sohaibanwaar/monoscene /bin/bash
+```
+Activate Environment
+```
+conda activate monoscene
+```
+Run Jupyter Notebook
+```
+nohup jupyter notebook --ip 0.0.0.0 --no-browser --allow-root &
+```
 
 ## Datasets
 
@@ -333,22 +362,6 @@ $ python monoscene/scripts/visualization/kitti_vis_pred.py +file=/path/to/output
 ```
 $ cd MonoScene/ 
 $ python monoscene/scripts/visualization/kitti_vis_pred.py +file=/path/to/output/file.pkl +dataset=kitti_360
-```
-## Docker Setup
-Here is Docker setup for MonoScene. You can use the following commands to build the docker image and run the container.
-
-Clone the git repository
-```
-git clone https://github.com/astra-vision/MonoScene.git
-cd MonoScene
-```
-Pull docker image
-```
-docker pull sohaibanwaar/monoscene
-```
-Run docker Image
-```
-docker run -it --gpus all -v /path/to/MonoScene:/MonoScene sohaibanwaar/monoscene /bin/bash
 ```
 
 # Followup Works
