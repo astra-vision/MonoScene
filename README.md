@@ -48,6 +48,9 @@ If you find this work or code useful, please cite our [paper](https://arxiv.org/
 - [Inference & Visualization](#inference--visualization)
   - [Inference](#inference)
   - [Visualization](#visualization)
+- [Jupyter Notebook](#jupyter-notebooks)
+  - [NYU DataSet Inference](MonoScene/jupyter_notebooks/NYU_dataset_inference.ipynb)
+  - [Predict Custom Images](MonoScene/jupyter_notebooks/predict_custom_image.ipynb)
 - [Followup Works](#followup-works)
 - [License](#license)
 
