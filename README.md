@@ -102,13 +102,9 @@ $ pip install torchmetrics==0.6.0
 ```
 $ pip install -e ./
 ```
-7. Configurations
-Setup your dataset and output data paths in 
-```
-MonoScene/monoscene/config/monoscene.yaml
-```
 
-# Docker Setup
+
+# Docker Setup (optional)
 Here is Docker setup for MonoScene. You can use the following commands to build the docker image and run the container.
 
 Clone the git repository
