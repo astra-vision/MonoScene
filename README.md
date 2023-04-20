@@ -1,8 +1,5 @@
 # MonoScene: Monocular 3D Semantic Scene Completion
 
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/monoscene-monocular-3d-semantic-scene/3d-semantic-scene-completion-from-a-single)](https://paperswithcode.com/sota/3d-semantic-scene-completion-from-a-single?p=monoscene-monocular-3d-semantic-scene)
-
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/monoscene-monocular-3d-semantic-scene/3d-semantic-scene-completion-from-a-single-1)](https://paperswithcode.com/sota/3d-semantic-scene-completion-from-a-single-1?p=monoscene-monocular-3d-semantic-scene)
 
 **MonoScene: Monocular 3D Semantic Scene Completion**\
 [Anh-Quan Cao](https://anhquancao.github.io),
@@ -50,7 +47,7 @@ If you find this work or code useful, please cite our [paper](https://arxiv.org/
 - [Inference & Visualization](#inference--visualization)
   - [Inference](#inference)
   - [Visualization](#visualization)
-- [Followup Works](#followup-works)
+- [Related camera-only 3D occupancy prediction projects](#related-camera-only-3D-occupancy-prediction-projects)
 - [License](#license)
 
 # News
@@ -337,20 +334,25 @@ $ cd MonoScene/
 $ python monoscene/scripts/visualization/kitti_vis_pred.py +file=/path/to/output/file.pkl +dataset=kitti_360
 ```
 
-# Followup Works
-### [SceneRF: Self-Supervised Monocular 3D Scene Reconstruction with Radiance Fields](https://astra-vision.github.io/SceneRF/) 
+# Related camera-only 3D occupancy prediction projects
+## Self-supervision
+- [SceneRF: Self-Supervised Monocular 3D Scene Reconstruction with Radiance Fields](https://astra-vision.github.io/SceneRF/) 
 
-We leverage generalizable neural radiance field (NeRF) to generate novel depths/views, conditioned on a single input frame. The novel depths/views are subsequently used to reconstruct the 3D mesh of the scene.
-<table>
-<tr>
-    <td align="center">Novel depths synthesis</td>
-    <td align="center">3D Reconstruction</td>
-</tr>
-<tr>
-    <td><img style="width:100%" src="./teaser/novel_depths.gif"</td>
-    <td><img style="width:100%" src="./teaser/3d_recon.gif" /></td>
-</tr>
-</table>
+## Surround views
+- [Tri-Perspective View for Vision-Based 3D Semantic Occupancy Prediction](https://github.com/wzzheng/TPVFormer)
+- [OpenOccupancy: A Large Scale Benchmark for Surrounding Semantic Occupancy Perception](https://github.com/JeffWang987/OpenOccupancy)
+- [A Simple Attempt for 3D Occupancy Estimation in Autonomous Driving](https://github.com/GANWANSHUI/SimpleOccupancy)
+- [Occupancy Dataset for nuScenes](https://github.com/FANG-MING/occupancy-for-nuscenes)
+- [OccFormer: Dual-path Transformer for Vision-based 3D Semantic Occupancy Prediction](https://github.com/zhangyp15/OccFormer)
+- [SurroundOcc: Multi-Camera 3D Occupancy Prediction for Autonomous Driving](https://github.com/weiyithu/SurroundOcc)
+
+## Depth-aware
+- [VoxFormer: a Cutting-edge Baseline for 3D Semantic Occupancy Prediction](https://github.com/NVlabs/VoxFormer)
+- [OccDepth: A Depth-aware Method for 3D Semantic Occupancy Network](https://github.com/megvii-research/OccDepth)
+- [StereoScene: BEV-Assisted Stereo Matching Empowers 3D Semantic Scene Completion](https://github.com/Arlo0o/StereoScene)
+
+## Videos as input
+- [VoxFormer: a Cutting-edge Baseline for 3D Semantic Occupancy Prediction](https://github.com/NVlabs/VoxFormer)
 
 # License
 MonoScene is released under the [Apache 2.0 license](./LICENSE).
