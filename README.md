@@ -47,11 +47,11 @@ If you find this work or code useful, please cite our [paper](https://arxiv.org/
 - [Inference & Visualization](#inference--visualization)
   - [Inference](#inference)
   - [Visualization](#visualization)
-- [Related camera-only 3D occupancy prediction projects](#related-camera-only-3D-occupancy-prediction-projects)
+- [Related camera-only 3D occupancy prediction projects](#related-camera-only-3d-occupancy-prediction-projects)
 - [License](#license)
 
 # News
-- 6/12/2022: We extend MonoScene to self-supervised setting but geometry-only estimation in [the followup work: SceneRF](https://astra-vision.github.io/SceneRF/) :mega:
+- 20/04/2023: Check out other [camera-only 3D occupancy prediction projects](#related-camera-only-3d-occupancy-prediction-projects).
 - 28/6/2022: We added [MonoScene demo on Hugging Face](https://huggingface.co/spaces/CVPR/MonoScene) 
 - 13/6/2022: We added a tutorial on [How to define viewpoint programmatically in mayavi](https://anhquancao.github.io/blog/2022/how-to-define-viewpoint-programmatically-in-mayavi/) 
 - 12/6/2022: We added a guide on [how to install mayavi](https://anhquancao.github.io/blog/2022/how-to-install-mayavi-with-python-3-on-ubuntu-2004-using-pip-or-anaconda/) 
