@@ -347,12 +347,12 @@ $ python monoscene/scripts/visualization/kitti_vis_pred.py +file=/path/to/output
 - [SurroundOcc: Multi-Camera 3D Occupancy Prediction for Autonomous Driving](https://github.com/weiyithu/SurroundOcc), arXiv 2023.
 
 ## Depth-aware
-- [VoxFormer: a Cutting-edge Baseline for 3D Semantic Occupancy Prediction](https://github.com/NVlabs/VoxFormer), CVPR 2023.
+- [VoxFormer: Sparse Voxel Transformer for Camera-based 3D Semantic Scene Completion](https://github.com/NVlabs/VoxFormer), CVPR 2023.
 - [OccDepth: A Depth-aware Method for 3D Semantic Occupancy Network](https://github.com/megvii-research/OccDepth), arXiv 2023.
 - [StereoScene: BEV-Assisted Stereo Matching Empowers 3D Semantic Scene Completion](https://github.com/Arlo0o/StereoScene), arXiv 2023.
 
 ## Videos as input
-- [VoxFormer: a Cutting-edge Baseline for 3D Semantic Occupancy Prediction](https://github.com/NVlabs/VoxFormer), CVPR 2023.
+- [VoxFormer: Sparse Voxel Transformer for Camera-based 3D Semantic Scene Completion](https://github.com/NVlabs/VoxFormer), CVPR 2023.
 
 # License
 MonoScene is released under the [Apache 2.0 license](./LICENSE).
