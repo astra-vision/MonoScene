@@ -335,8 +335,8 @@ $ python monoscene/scripts/visualization/kitti_vis_pred.py +file=/path/to/output
 ```
 
 # Related camera-only 3D occupancy prediction projects
-## Self-supervision
-- [SceneRF: Self-Supervised Monocular 3D Scene Reconstruction with Radiance Fields](https://astra-vision.github.io/SceneRF/), arXiv 2022.
+## Open Vocab
+- [OVO: Open-Vocabulary Occupancy](https://arxiv.org/pdf/2305.16133.pdf), arXiv 2023.
 
 ## Surround views
 ### Methods
@@ -356,6 +356,11 @@ $ python monoscene/scripts/visualization/kitti_vis_pred.py +file=/path/to/output
 
 ## Videos as input
 - [VoxFormer: Sparse Voxel Transformer for Camera-based 3D Semantic Scene Completion](https://github.com/NVlabs/VoxFormer), CVPR 2023.
+
+## Self-supervision
+- [SceneRF: Self-Supervised Monocular 3D Scene Reconstruction with Radiance Fields](https://astra-vision.github.io/SceneRF/), arXiv 2022.
+
+
 
 # License
 MonoScene is released under the [Apache 2.0 license](./LICENSE).
