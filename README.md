@@ -337,6 +337,7 @@ $ python monoscene/scripts/visualization/kitti_vis_pred.py +file=/path/to/output
 # Related camera-only 3D occupancy prediction projects
 ## Open Vocab
 - [OVO: Open-Vocabulary Occupancy](https://arxiv.org/pdf/2305.16133.pdf), arXiv 2023.
+- [OccNet: Scene as Occupancy](https://github.com/opendrivelab/occnet), arXiv 2023.
 
 ## Surround views
 ### Methods
@@ -344,10 +345,11 @@ $ python monoscene/scripts/visualization/kitti_vis_pred.py +file=/path/to/output
 - [A Simple Attempt for 3D Occupancy Estimation in Autonomous Driving](https://github.com/GANWANSHUI/SimpleOccupancy), arXiv 2023.
 - [OccFormer: Dual-path Transformer for Vision-based 3D Semantic Occupancy Prediction](https://github.com/zhangyp15/OccFormer), arXiv 2023.
 - [SurroundOcc: Multi-Camera 3D Occupancy Prediction for Autonomous Driving](https://github.com/weiyithu/SurroundOcc), arXiv 2023.
-### Datasets
+### Datasets/Benchmarks
 - [OpenOccupancy: A Large Scale Benchmark for Surrounding Semantic Occupancy Perception](https://github.com/JeffWang987/OpenOccupancy), arXiv 2023.
 - [Occupancy Dataset for nuScenes](https://github.com/FANG-MING/occupancy-for-nuscenes), Github 2023
 - [Occ3D: A Large-Scale 3D Occupancy Prediction Benchmark for Autonomous Driving](https://github.com/Tsinghua-MARS-Lab/Occ3D), arXiv 2023.
+- [OccNet: Scene as Occupancy](https://github.com/opendrivelab/occnet), arXiv 2023.
 
 ## Depth-aware
 - [VoxFormer: Sparse Voxel Transformer for Camera-based 3D Semantic Scene Completion](https://github.com/NVlabs/VoxFormer), CVPR 2023.
