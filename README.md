@@ -350,6 +350,7 @@ $ python monoscene/scripts/visualization/kitti_vis_pred.py +file=/path/to/output
 - [Occupancy Dataset for nuScenes](https://github.com/FANG-MING/occupancy-for-nuscenes), Github 2023
 - [Occ3D: A Large-Scale 3D Occupancy Prediction Benchmark for Autonomous Driving](https://github.com/Tsinghua-MARS-Lab/Occ3D), arXiv 2023.
 - [OccNet: Scene as Occupancy](https://github.com/opendrivelab/occnet), arXiv 2023.
+- [SSCBench: A Large-Scale 3D Semantic Scene Completion Benchmark for Autonomous Driving](https://github.com/ai4ce/SSCBench), arXiv 2023.
 
 ## Depth-aware
 - [VoxFormer: Sparse Voxel Transformer for Camera-based 3D Semantic Scene Completion](https://github.com/NVlabs/VoxFormer), CVPR 2023.
