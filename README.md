@@ -345,6 +345,7 @@ $ python monoscene/scripts/visualization/kitti_vis_pred.py +file=/path/to/output
 - [A Simple Attempt for 3D Occupancy Estimation in Autonomous Driving](https://github.com/GANWANSHUI/SimpleOccupancy), arXiv 2023.
 - [OccFormer: Dual-path Transformer for Vision-based 3D Semantic Occupancy Prediction](https://github.com/zhangyp15/OccFormer), arXiv 2023.
 - [SurroundOcc: Multi-Camera 3D Occupancy Prediction for Autonomous Driving](https://github.com/weiyithu/SurroundOcc), arXiv 2023.
+- [PanoOcc: Unified Occupancy Representation for Camera-based 3D Panoptic Segmentation](https://arxiv.org/abs/2306.10013), arXiv 2023.
 ### Datasets/Benchmarks
 - [OpenOccupancy: A Large Scale Benchmark for Surrounding Semantic Occupancy Perception](https://github.com/JeffWang987/OpenOccupancy), arXiv 2023.
 - [Occupancy Dataset for nuScenes](https://github.com/FANG-MING/occupancy-for-nuscenes), Github 2023
