@@ -339,7 +339,7 @@ $ python monoscene/scripts/visualization/kitti_vis_pred.py +file=/path/to/output
 
 ## Self-supervision
 - [SceneRF: Self-Supervised Monocular 3D Scene Reconstruction with Radiance Fields](https://astra-vision.github.io/SceneRF/), ICCV 2023.
-- 
+
 ## Open Vocab
 - [OVO: Open-Vocabulary Occupancy](https://arxiv.org/pdf/2305.16133.pdf), arXiv 2023.
 - [OccNet: Scene as Occupancy](https://github.com/opendrivelab/occnet), arXiv 2023.
