@@ -363,7 +363,7 @@ $ python monoscene/scripts/visualization/kitti_vis_pred.py +file=/path/to/output
 - [VoxFormer: Sparse Voxel Transformer for Camera-based 3D Semantic Scene Completion](https://github.com/NVlabs/VoxFormer), CVPR 2023.
 
 ## Self-supervision
-- [SceneRF: Self-Supervised Monocular 3D Scene Reconstruction with Radiance Fields](https://astra-vision.github.io/SceneRF/), arXiv 2022.
+- [SceneRF: Self-Supervised Monocular 3D Scene Reconstruction with Radiance Fields](https://astra-vision.github.io/SceneRF/), ICCV 2023.
 
 
 
