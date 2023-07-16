@@ -335,14 +335,20 @@ $ python monoscene/scripts/visualization/kitti_vis_pred.py +file=/path/to/output
 ```
 
 # Related camera-only 3D occupancy prediction projects
+
+
+
+## Single View
+
+- [OG: Equip vision occupancy with instance segmentation and visual grounding](https://arxiv.org/abs/2307.05873), arXiv 2023.
+- [FB-OCC: 3D Occupancy Prediction based on Forward-Backward View Transformation](https://github.com/NVlabs/FB-BEV), CVPRW 2023.
 - [Symphonize 3D Semantic Scene Completion with Contextual Instance Queries](https://github.com/hustvl/Symphonies), arXiv 2023.
-
-## Self-supervision
-- [SceneRF: Self-Supervised Monocular 3D Scene Reconstruction with Radiance Fields](https://astra-vision.github.io/SceneRF/), ICCV 2023.
-
-## Open Vocab
 - [OVO: Open-Vocabulary Occupancy](https://arxiv.org/pdf/2305.16133.pdf), arXiv 2023.
 - [OccNet: Scene as Occupancy](https://github.com/opendrivelab/occnet), arXiv 2023.
+- [SceneRF: Self-Supervised Monocular 3D Scene Reconstruction with Radiance Fields](https://astra-vision.github.io/SceneRF/), ICCV 2023.
+- [VoxFormer: Sparse Voxel Transformer for Camera-based 3D Semantic Scene Completion](https://github.com/NVlabs/VoxFormer), CVPR 2023.
+- [OccDepth: A Depth-aware Method for 3D Semantic Occupancy Network](https://github.com/megvii-research/OccDepth), arXiv 2023.
+- [StereoScene: BEV-Assisted Stereo Matching Empowers 3D Semantic Scene Completion](https://github.com/Arlo0o/StereoScene), arXiv 2023.
 
 ## Surround views
 - [Tri-Perspective View for Vision-Based 3D Semantic Occupancy Prediction](https://github.com/wzzheng/TPVFormer), CVPR 2023.
@@ -350,6 +356,7 @@ $ python monoscene/scripts/visualization/kitti_vis_pred.py +file=/path/to/output
 - [OccFormer: Dual-path Transformer for Vision-based 3D Semantic Occupancy Prediction](https://github.com/zhangyp15/OccFormer), arXiv 2023.
 - [SurroundOcc: Multi-Camera 3D Occupancy Prediction for Autonomous Driving](https://github.com/weiyithu/SurroundOcc), arXiv 2023.
 - [PanoOcc: Unified Occupancy Representation for Camera-based 3D Panoptic Segmentation](https://arxiv.org/abs/2306.10013), arXiv 2023.
+
 ## Datasets/Benchmarks
 - [OpenOccupancy: A Large Scale Benchmark for Surrounding Semantic Occupancy Perception](https://github.com/JeffWang987/OpenOccupancy), arXiv 2023.
 - [Occupancy Dataset for nuScenes](https://github.com/FANG-MING/occupancy-for-nuscenes), Github 2023
@@ -357,13 +364,6 @@ $ python monoscene/scripts/visualization/kitti_vis_pred.py +file=/path/to/output
 - [OccNet: Scene as Occupancy](https://github.com/opendrivelab/occnet), arXiv 2023.
 - [SSCBench: A Large-Scale 3D Semantic Scene Completion Benchmark for Autonomous Driving](https://github.com/ai4ce/SSCBench), arXiv 2023.
 
-## Depth-aware
-- [VoxFormer: Sparse Voxel Transformer for Camera-based 3D Semantic Scene Completion](https://github.com/NVlabs/VoxFormer), CVPR 2023.
-- [OccDepth: A Depth-aware Method for 3D Semantic Occupancy Network](https://github.com/megvii-research/OccDepth), arXiv 2023.
-- [StereoScene: BEV-Assisted Stereo Matching Empowers 3D Semantic Scene Completion](https://github.com/Arlo0o/StereoScene), arXiv 2023.
-
-## Videos as input
-- [VoxFormer: Sparse Voxel Transformer for Camera-based 3D Semantic Scene Completion](https://github.com/NVlabs/VoxFormer), CVPR 2023.
 
 
 
