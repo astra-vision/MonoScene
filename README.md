@@ -299,11 +299,15 @@ $ python monoscene/scripts/generate_output.py \
 
 ## Visualization
 
+**NOTE:** if you have trouble using mayavi, you can use an alternative [visualization code using Open3D](https://github.com/astra-vision/MonoScene/issues/68#issuecomment-1637623145).
+
+
 We use mayavi to visualize the predictions. Please install mayavi following the [official installation instruction](https://docs.enthought.com/mayavi/mayavi/installation.html). Then, use the following commands to visualize the outputs on respective datasets.
 
 If you have **trouble installing mayavi**, you can take a look at our [**mayavi installation guide**](https://anhquancao.github.io/blog/2022/how-to-install-mayavi-with-python-3-on-ubuntu-2004-using-pip-or-anaconda/).
 
 If you have **trouble fixing mayavi viewpoint**, you can take a look at [**our tutorial**](https://anhquancao.github.io/blog/2022/how-to-define-viewpoint-programmatically-in-mayavi/).
+
 
 You also need to install some packages used by the visualization scripts using the commands:
 ```
