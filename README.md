@@ -358,15 +358,15 @@ $ python monoscene/scripts/visualization/kitti_vis_pred.py +file=/path/to/output
 ## Surround views
 - [Tri-Perspective View for Vision-Based 3D Semantic Occupancy Prediction](https://github.com/wzzheng/TPVFormer), CVPR 2023.
 - [A Simple Attempt for 3D Occupancy Estimation in Autonomous Driving](https://github.com/GANWANSHUI/SimpleOccupancy), arXiv 2023.
-- [OccFormer: Dual-path Transformer for Vision-based 3D Semantic Occupancy Prediction](https://github.com/zhangyp15/OccFormer), arXiv 2023.
-- [SurroundOcc: Multi-Camera 3D Occupancy Prediction for Autonomous Driving](https://github.com/weiyithu/SurroundOcc), arXiv 2023.
+- [OccFormer: Dual-path Transformer for Vision-based 3D Semantic Occupancy Prediction](https://github.com/zhangyp15/OccFormer), ICCV 2023.
+- [SurroundOcc: Multi-Camera 3D Occupancy Prediction for Autonomous Driving](https://github.com/weiyithu/SurroundOcc), ICCV 2023.
 - [PanoOcc: Unified Occupancy Representation for Camera-based 3D Panoptic Segmentation](https://arxiv.org/abs/2306.10013), arXiv 2023.
 
 ## Datasets/Benchmarks
-- [OpenOccupancy: A Large Scale Benchmark for Surrounding Semantic Occupancy Perception](https://github.com/JeffWang987/OpenOccupancy), arXiv 2023.
+- [OpenOccupancy: A Large Scale Benchmark for Surrounding Semantic Occupancy Perception](https://github.com/JeffWang987/OpenOccupancy), ICCV 2023.
 - [Occupancy Dataset for nuScenes](https://github.com/FANG-MING/occupancy-for-nuscenes), Github 2023
 - [Occ3D: A Large-Scale 3D Occupancy Prediction Benchmark for Autonomous Driving](https://github.com/Tsinghua-MARS-Lab/Occ3D), arXiv 2023.
-- [OccNet: Scene as Occupancy](https://github.com/opendrivelab/occnet), arXiv 2023.
+- [OccNet: Scene as Occupancy](https://github.com/opendrivelab/occnet), ICCV 2023.
 - [SSCBench: A Large-Scale 3D Semantic Scene Completion Benchmark for Autonomous Driving](https://github.com/ai4ce/SSCBench), arXiv 2023.
 
 
