@@ -348,7 +348,7 @@ $ python monoscene/scripts/visualization/kitti_vis_pred.py +file=/path/to/output
 - [FB-OCC: 3D Occupancy Prediction based on Forward-Backward View Transformation](https://github.com/NVlabs/FB-BEV), CVPRW 2023.
 - [Symphonize 3D Semantic Scene Completion with Contextual Instance Queries](https://github.com/hustvl/Symphonies), arXiv 2023.
 - [OVO: Open-Vocabulary Occupancy](https://arxiv.org/pdf/2305.16133.pdf), arXiv 2023.
-- [OccNet: Scene as Occupancy](https://github.com/opendrivelab/occnet), arXiv 2023.
+- [OccNet: Scene as Occupancy](https://github.com/opendrivelab/occnet), ICCV 2023.
 - [SceneRF: Self-Supervised Monocular 3D Scene Reconstruction with Radiance Fields](https://astra-vision.github.io/SceneRF/), ICCV 2023.
 - [Behind the Scenes: Density Fields for Single View Reconstruction](https://fwmb.github.io/bts/), CVPR 2023.
 - [VoxFormer: Sparse Voxel Transformer for Camera-based 3D Semantic Scene Completion](https://github.com/NVlabs/VoxFormer), CVPR 2023.
