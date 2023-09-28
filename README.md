@@ -343,7 +343,7 @@ $ python monoscene/scripts/visualization/kitti_vis_pred.py +file=/path/to/output
 
 
 ## Single View
-
+- [NDC-Scene: Boost Monocular 3D Semantic Scene Completion in Normalized Device Coordinates Space](https://github.com/Jiawei-Yao0812/NDCScene), ICCV 2023.
 - [OG: Equip vision occupancy with instance segmentation and visual grounding](https://arxiv.org/abs/2307.05873), arXiv 2023.
 - [FB-OCC: 3D Occupancy Prediction based on Forward-Backward View Transformation](https://github.com/NVlabs/FB-BEV), CVPRW 2023.
 - [Symphonize 3D Semantic Scene Completion with Contextual Instance Queries](https://github.com/hustvl/Symphonies), arXiv 2023.
