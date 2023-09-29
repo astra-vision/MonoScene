@@ -359,7 +359,7 @@ $ python monoscene/scripts/visualization/kitti_vis_pred.py +file=/path/to/output
 - [SurroundOcc: Multi-Camera 3D Occupancy Prediction for Autonomous Driving](https://github.com/weiyithu/SurroundOcc), ICCV 2023.
 - [PanoOcc: Unified Occupancy Representation for Camera-based 3D Panoptic Segmentation](https://arxiv.org/abs/2306.10013), arXiv 2023.
 - [PointOcc: Cylindrical Tri-Perspective View for Point-based 3D Semantic Occupancy Prediction](https://github.com/wzzheng/PointOcc), arXiv 2023.
-- [RenderOcc: Vision-Centric 3D Occupancy Prediction with 2D Rendering Supervision](RenderOcc: Vision-Centric 3D Occupancy Prediction with 2D Rendering Supervision), arXiv 2023.
+- [RenderOcc: Vision-Centric 3D Occupancy Prediction with 2D Rendering Supervision](https://arxiv.org/abs/2309.09502), arXiv 2023.
 
 ## Datasets/Benchmarks
 - [PointSSC: A Cooperative Vehicle-Infrastructure Point Cloud Benchmark for Semantic Scene Completion](https://arxiv.org/abs/2309.12708), arXiv 2023.
