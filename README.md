@@ -342,7 +342,6 @@ $ python monoscene/scripts/visualization/kitti_vis_pred.py +file=/path/to/output
 
 
 
-## Single View
 - [NDC-Scene: Boost Monocular 3D Semantic Scene Completion in Normalized Device Coordinates Space](https://github.com/Jiawei-Yao0812/NDCScene), ICCV 2023.
 - [OG: Equip vision occupancy with instance segmentation and visual grounding](https://arxiv.org/abs/2307.05873), arXiv 2023.
 - [FB-OCC: 3D Occupancy Prediction based on Forward-Backward View Transformation](https://github.com/NVlabs/FB-BEV), CVPRW 2023.
@@ -354,13 +353,13 @@ $ python monoscene/scripts/visualization/kitti_vis_pred.py +file=/path/to/output
 - [VoxFormer: Sparse Voxel Transformer for Camera-based 3D Semantic Scene Completion](https://github.com/NVlabs/VoxFormer), CVPR 2023.
 - [OccDepth: A Depth-aware Method for 3D Semantic Occupancy Network](https://github.com/megvii-research/OccDepth), arXiv 2023.
 - [StereoScene: BEV-Assisted Stereo Matching Empowers 3D Semantic Scene Completion](https://github.com/Arlo0o/StereoScene), arXiv 2023.
-
-## Surround views
 - [Tri-Perspective View for Vision-Based 3D Semantic Occupancy Prediction](https://github.com/wzzheng/TPVFormer), CVPR 2023.
 - [A Simple Attempt for 3D Occupancy Estimation in Autonomous Driving](https://github.com/GANWANSHUI/SimpleOccupancy), arXiv 2023.
 - [OccFormer: Dual-path Transformer for Vision-based 3D Semantic Occupancy Prediction](https://github.com/zhangyp15/OccFormer), ICCV 2023.
 - [SurroundOcc: Multi-Camera 3D Occupancy Prediction for Autonomous Driving](https://github.com/weiyithu/SurroundOcc), ICCV 2023.
 - [PanoOcc: Unified Occupancy Representation for Camera-based 3D Panoptic Segmentation](https://arxiv.org/abs/2306.10013), arXiv 2023.
+- [PointOcc: Cylindrical Tri-Perspective View for Point-based 3D Semantic Occupancy Prediction](https://github.com/wzzheng/PointOcc), arXiv 2023.
+- [RenderOcc: Vision-Centric 3D Occupancy Prediction with 2D Rendering Supervision](RenderOcc: Vision-Centric 3D Occupancy Prediction with 2D Rendering Supervision), arXiv 2023.
 
 ## Datasets/Benchmarks
 - [PointSSC: A Cooperative Vehicle-Infrastructure Point Cloud Benchmark for Semantic Scene Completion](https://arxiv.org/abs/2309.12708), arXiv 2023.
