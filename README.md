@@ -51,11 +51,12 @@ If you find this work or code useful, please cite our [paper](https://arxiv.org/
 - [License](#license)
 
 # News
-- 20/04/2023: Check out other [camera-only 3D occupancy prediction projects](#related-camera-only-3d-occupancy-prediction-projects).
-- 28/6/2022: We added [MonoScene demo on Hugging Face](https://huggingface.co/spaces/CVPR/MonoScene) 
-- 13/6/2022: We added a tutorial on [How to define viewpoint programmatically in mayavi](https://anhquancao.github.io/blog/2022/how-to-define-viewpoint-programmatically-in-mayavi/) 
-- 12/6/2022: We added a guide on [how to install mayavi](https://anhquancao.github.io/blog/2022/how-to-install-mayavi-with-python-3-on-ubuntu-2004-using-pip-or-anaconda/) 
-- 9/6/2022: We fixed the installation errors mentioned in https://github.com/astra-vision/MonoScene/issues/18 
+- 05/12/2023: Check out our recent work [PaSCo: Urban 3D Panoptic Scene Completion with Uncertainty Awareness](https://astra-vision.github.io/PaSCo/) :rotating_light:
+- 20/04/2023: Check out other [camera-only 3D occupancy prediction projects](#related-camera-only-3d-occupancy-prediction-projects)
+- 28/06/2022: We added [MonoScene demo on Hugging Face](https://huggingface.co/spaces/CVPR/MonoScene) 
+- 13/06/2022: We added a tutorial on [How to define viewpoint programmatically in mayavi](https://anhquancao.github.io/blog/2022/how-to-define-viewpoint-programmatically-in-mayavi/) 
+- 12/06/2022: We added a guide on [how to install mayavi](https://anhquancao.github.io/blog/2022/how-to-install-mayavi-with-python-3-on-ubuntu-2004-using-pip-or-anaconda/) 
+- 09/06/2022: We fixed the installation errors mentioned in https://github.com/astra-vision/MonoScene/issues/18 
 
 # Preparing MonoScene
 
