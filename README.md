@@ -264,10 +264,10 @@ To generate the predictions on the NYUv2 test set, type:
 $ cd MonoScene/
 $ python monoscene/scripts/generate_output.py \
     +output_path=$MONOSCENE_OUTPUT \
-    dataset=NYU \
-    NYU_root=$NYU_ROOT \
-    NYU_preprocess_root=$NYU_PREPROCESS \
-    n_gpus=1 batch_size=1
+    +dataset=NYU \
+    +NYU_root=$NYU_ROOT \
+    +NYU_preprocess_root=$NYU_PREPROCESS \
+    +n_gpus=1 +batch_size=1
 ```
 
 ### Semantic KITTI
@@ -278,10 +278,10 @@ To generate the predictions on the Semantic KITTI validation set, type:
 $ cd MonoScene/
 $ python monoscene/scripts/generate_output.py \
     +output_path=$MONOSCENE_OUTPUT \
-    dataset=kitti \
-    kitti_root=$KITTI_ROOT \
-    kitti_preprocess_root=$KITTI_PREPROCESS \
-    n_gpus=1 batch_size=1
+    +dataset=kitti \
+    +kitti_root=$KITTI_ROOT \
+    +kitti_preprocess_root=$KITTI_PREPROCESS \
+    +n_gpus=1 +batch_size=1
 ```
 
 ### KITTI-360
@@ -292,10 +292,10 @@ Here we use the sequence **2013_05_28_drive_0009_sync**, you can use other seque
 $ cd MonoScene/
 $ python monoscene/scripts/generate_output.py \
     +output_path=$MONOSCENE_OUTPUT \
-    dataset=kitti_360 \
+    +dataset=kitti_360 \
     +kitti_360_root=$KITTI_360_ROOT \
     +kitti_360_sequence=2013_05_28_drive_0009_sync  \
-    n_gpus=1 batch_size=1
+    +n_gpus=1 +batch_size=1 +fp_loss=True
 ```
 
 ## Visualization

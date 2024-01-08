@@ -20,7 +20,7 @@ def get_grid_coords(dims, resolution):
     # Obtaining the grid with coords...
     xx, yy, zz = np.meshgrid(g_xx[:-1], g_yy[:-1], g_zz[:-1])
     coords_grid = np.array([xx.flatten(), yy.flatten(), zz.flatten()]).T
-    coords_grid = coords_grid.astype(np.float)
+    coords_grid = coords_grid.astype(float)
 
     coords_grid = (coords_grid * resolution) + resolution / 2
 
